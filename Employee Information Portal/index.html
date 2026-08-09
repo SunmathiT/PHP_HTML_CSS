@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>Faculty Information Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Faculty Information Portal</h2>
+
+<form action="faculty.php" method="post">
+
+<label>Faculty ID</label>
+<input type="text" name="facid" required>
+
+<label>Faculty Name</label>
+<input type="text" name="name" required>
+
+<label>Email ID</label>
+<input type="email" name="email" required>
+
+<label>Mobile Number</label>
+<input type="tel" name="mobile" pattern="[0-9]{10}" required>
+
+<label>Department</label>
+
+<select name="department" required>
+<option value="">Select Department</option>
+<option>Computer Science</option>
+<option>Mechanical Engineering</option>
+<option>Electronics &amp; Communication</option>
+<option>Mathematics</option>
+<option>English</option>
+</select>
+
+<label>Designation</label>
+<input type="text" name="designation" required>
+
+<input type="submit" value="View Profile">
+
+</form>
+
+</div>
+
+</body>
+</html>
