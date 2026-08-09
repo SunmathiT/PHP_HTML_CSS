@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title>Supermarket Billing System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Supermarket Billing System</h2>
+
+<form action="bill.php" method="post">
+
+<label>Customer Name</label>
+<input type="text" name="customer" required>
+
+<label>Product Name</label>
+<input type="text" name="product" required>
+
+<label>Quantity</label>
+<input type="number" name="quantity" min="1" required>
+
+<label>Price per Unit (₹)</label>
+<input type="number" name="price" min="1" step="0.01" required>
+
+<input type="submit" value="Generate Invoice">
+
+</form>
+
+</div>
+
+</body>
+</html>
