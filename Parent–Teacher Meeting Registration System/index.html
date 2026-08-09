@@ -1,0 +1,60 @@
+<html>
+<head>
+    <title>Parent-Teacher Meeting Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<h2>Parent-Teacher Meeting Registration</h2>
+
+
+<form action="appointment.php" method="post">
+
+
+<label>Parent Name</label>
+<input type="text" name="parent" required>
+
+
+<label>Student Name</label>
+<input type="text" name="student" required>
+
+
+<label>Class</label>
+<input type="text" name="class" required>
+
+
+<label>Select Meeting Slot</label>
+
+
+<select name="slot" required>
+<option value="">Choose Slot</option>
+<option>09:00 AM - 09:30 AM</option>
+<option>09:30 AM - 10:00 AM</option>
+<option>10:00 AM - 10:30 AM</option>
+<option>10:30 AM - 11:00 AM</option>
+<option>11:00 AM - 11:30 AM</option>
+<option>11:30 AM - 12:00 PM</option>
+</select>
+
+
+<label>Contact Number</label>
+<input type="tel" name="mobile" pattern="[0-9]{10}" required>
+
+
+<input type="submit" value="Book Appointment">
+
+
+</form>
+
+
+</div>
+
+
+</body>
+</html>
