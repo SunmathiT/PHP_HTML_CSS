@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div class="container">
+    <h2>Student Registration Form</h2>
+
+
+    <form action="process.php" method="post">
+
+
+        <label>Student Name</label>
+        <input type="text" name="name" placeholder="Enter your name" required>
+
+
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Enter your email" required>
+
+
+        <label>Age</label>
+        <input type="number" name="age" min="16" max="30" required>
+
+
+        <label>Course</label>
+        <select name="course" required>
+            <option value="">Select Course</option>
+            <option>B.Sc Computer Science</option>
+            <option>BCA</option>
+            <option>B.Com</option>
+            <option>BBA</option>
+        </select>
+
+
+        <label>Gender</label>
+
+
+        <div class="radio-group">
+            <input type="radio" name="gender" value="Male" required> Male
+            <input type="radio" name="gender" value="Female"> Female
+        </div>
+
+
+        <input type="submit" value="Register">
+
+
+    </form>
+</div>
+
+
+</body>
+</html>
