@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>Mobile Bill Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Mobile Bill Generator</h2>
+
+<form action="bill.php" method="post">
+
+<label>Customer Name</label>
+<input type="text" name="name" required>
+
+<label>Mobile Number</label>
+<input type="tel" name="mobile" pattern="[0-9]{10}" required>
+
+<label>Tariff Plan</label>
+
+<select name="plan" required>
+<option value="">Select Plan</option>
+<option value="Basic">Basic</option>
+<option value="Standard">Standard</option>
+<option value="Premium">Premium</option>
+</select>
+
+<label>Call Minutes Used</label>
+<input type="number" name="minutes" min="0" required>
+
+<input type="submit" value="Generate Bill">
+
+</form>
+
+</div>
+
+</body>
+</html>
