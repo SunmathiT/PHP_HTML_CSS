@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>Library Membership Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Library Membership Registration</h2>
+
+<form action="register.php" method="post">
+
+<label>Member Name</label>
+<input type="text" name="name" required>
+
+<label>Email ID</label>
+<input type="email" name="email" required>
+
+<label>Mobile Number</label>
+<input type="tel" name="mobile" pattern="[0-9]{10}" required>
+
+<label>Membership Type</label>
+
+<select name="membership" required>
+<option value="">Select Membership</option>
+<option>Student</option>
+<option>Faculty</option>
+<option>General</option>
+</select>
+
+<input type="submit" value="Register">
+
+</form>
+
+</div>
+
+</body>
+</html>
