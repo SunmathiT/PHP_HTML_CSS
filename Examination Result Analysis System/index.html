@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title>Skill Certification Result Analysis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Examination Certification Result Analysis</h2>
+
+<form action="result.php" method="post">
+
+<label>Student Name</label>
+<input type="text" name="name" required>
+
+<label>Certificate ID</label>
+<input type="text" name="certid" required>
+
+<label>Marks Obtained</label>
+<input type="number" name="marks" min="0" max="500" required>
+
+<label>Maximum Marks</label>
+<input type="number" name="total" value="500" min="1" required>
+
+<input type="submit" value="Analyze Result">
+
+</form>
+
+</div>
+
+</body>
+</html>
