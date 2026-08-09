@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title>Travel Package Booking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Travel Package Booking</h2>
+
+<form action="booking.php" method="post">
+
+<label>Customer Name</label>
+<input type="text" name="name" required>
+
+<label>Email</label>
+<input type="email" name="email" required>
+
+<label>Mobile Number</label>
+<input type="tel" name="mobile" pattern="[0-9]{10}" required>
+
+<label>Select Travel Package</label>
+
+<select name="package" required>
+<option value="">Choose Package</option>
+<option>Ooty Tour</option>
+<option>Kodaikanal Tour</option>
+<option>Goa Holiday</option>
+<option>Kerala Backwaters</option>
+</select>
+
+<label>Number of Travelers</label>
+<input type="number" name="persons" min="1" required>
+
+<input type="submit" value="Book Package">
+
+</form>
+
+</div>
+
+</body>
+</html>
